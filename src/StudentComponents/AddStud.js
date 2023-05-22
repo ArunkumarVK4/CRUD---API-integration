@@ -14,7 +14,7 @@ import { BASEURL } from "./BaseUrl";
   // ADD STUDENT FUNCTION
   async function addStudent() {
     if (!name) {
-      Swal("Success", "Please fill all the Fields", "error");
+      Swal("Field", "Please fill all the Fields", "error");
     } else if (!gender) {
       Swal("Success", "Gender Field is Required", "error");
     } else if (!sub1) {
