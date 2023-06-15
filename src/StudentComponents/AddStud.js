@@ -14,15 +14,15 @@ import { BASEURL } from "./BaseUrl";
   // ADD STUDENT FUNCTION
   async function addStudent() {
     if (!name) {
-      Swal("Field", "Please fill all the Fields", "error");
+      Swal("FAILED", "Please fill all the Fields", "error");
     } else if (!gender) {
-      Swal("Success", "Gender Field is Required", "error");
+      Swal("FAILED", "Gender Field is Required", "error");
     } else if (!sub1) {
-      Swal("Success", "English Field is Required", "error");
+      Swal("FAILED", "English Field is Required", "error");
     } else if (!sub2) {
-      Swal("Success", "Maths Field is Required", "error");
+      Swal("FAILED", "Maths Field is Required", "error");
     } else if (!sub3) {
-      Swal("Success", "Physics Field is Required", "error");
+      Swal("FAILED", "Physics Field is Required", "error");
     } else {
       const newStudent = {
         name,
